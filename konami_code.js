@@ -9,13 +9,11 @@ function init() {
 
 function codeListener(e) {
   var key = parseInt(e.which);
-  if (key === code[index]) {
+  while (key === code[index]) {
     index++;
     if (index === code.length) {
       alert("You know the super-secret password!!");
       index = 0;
     }
-  } else {
-    index = 0;
   }
 }
