@@ -8,8 +8,8 @@ function init() {
 }
 
 function codeListener(e) {
-  var keys = parseInt(e.detail || e.which);
-  if (keys === code[index]) {
+  var key = parseInt(e.detail || e.which);
+  if (key === code[index]) {
     index++;
     if (index === code.length) {
       alert("You know the super-secret password!!");
@@ -18,4 +18,4 @@ function codeListener(e) {
   } else {
     index = 0;
   }
-})
+}
