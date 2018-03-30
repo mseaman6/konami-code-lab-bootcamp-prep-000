@@ -9,8 +9,7 @@ function init() {
 
 function codeListener(e) {
   console.log(e.which);
-  debugger;
-    var key = parseInt(e.which);
+  var key = parseInt(e.which);
   if (key === code[index]) {
     index++;
     if (index === code.length) {
