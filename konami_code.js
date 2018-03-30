@@ -11,13 +11,13 @@ function codeListener(e) {
   console.log(e.which);
   debugger;
     var key = parseInt(e.which);
-//  if (key === code[index]) {
-//    index++;
-//    if (index === code.length) {
-//      alert("You know the super-secret password!!");
-//      index = 0;
-//    } else {
-//      index = 0;
-//    }
-//  }
+  if (key === code[index]) {
+    index++;
+    if (index === code.length) {
+      alert("You know the super-secret password!!");
+      index = 0;
+    } else {
+      index = 0;
+    }
+  }
 }
