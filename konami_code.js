@@ -11,6 +11,7 @@ function codeListener(e) {
   console.log(e.which);
   var key = parseInt(e.detail || e.which);
   if (key === code[index]) {
+    debugger;
     index++;
     if (index === code.length) {
       alert("You know the super-secret password!!");
