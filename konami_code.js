@@ -8,6 +8,7 @@ function init() {
 }
 
 function codeListener(e) {
+  console.log(e.which);
   var key = parseInt(e.detail || e.which);
   if (key === code[index]) {
     index++;
