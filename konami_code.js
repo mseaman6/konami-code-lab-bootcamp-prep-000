@@ -4,17 +4,18 @@ let index = 0;
 
 function init() {
   const body = document.body;
-  body.addEventListener('keydown', function(e) {
-    var keys = parseInt(e.detail || e.which);
-    if (keys === code[index]) {
-      index++;
-      if (index === code.length) {
-        alert("You know the super-secret password!!");
-        index = 0;
-      }
-    } else {
+  body.addEventListener('keydown', codeListener());
+}
+
+function codeListener(e) {
+  var keys = parseInt(e.detail || e.which);
+  if (keys === code[index]) {
+    index++;
+    if (index === code.length) {
+      alert("You know the super-secret password!!");
       index = 0;
     }
-   
+  } else {
+    index = 0;
   }
 })
